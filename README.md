@@ -1,6 +1,6 @@
 # ember-typed
 
-This addon is a go-to solution for integration of [https://github.com/mattboldt/typed.js/](Typed.js) library into Ember.js as component.
+This addon is a go-to solution for integration of [Typed.js](https://github.com/mattboldt/typed.js/) library into Ember.js as component.
 
 ## Installation
 
@@ -90,7 +90,7 @@ Add this CSS to your app styles.
 ```
 
 ## Anything else?
-Please refer to the [https://github.com/mattboldt/typed.js/](Typed.js) library for docs on advanced features.
+Please refer to the [Typed.js](https://github.com/mattboldt/typed.js/) library for docs on advanced features.
 
 ## Running
 
@@ -110,4 +110,4 @@ Please refer to the [https://github.com/mattboldt/typed.js/](Typed.js) library f
 For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
 
 ## Credits
-Thanks to [https://github.com/mattboldt](@mattboldt) for such awesome library!
+Thanks to [mattboldt](https://github.com/mattboldt) for such awesome library!
