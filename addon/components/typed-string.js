@@ -24,7 +24,22 @@ export default Ember.Component.extend({
   didInsertElement() {
     const { strings, stringsElement, typeSpeed, startDelay, backSpeed, backDelay, loop, loopCount, showCursor, cursorChar, attr, contentType, callback, preStringTyped, onStringTyped, resetCallback } = this.getProperties('strings', 'stringsElement', 'typeSpeed', 'startDelay', 'backSpeed', 'backDelay', 'loop', 'loopCount', 'showCursor', 'cursorChar', 'attr', 'contentType', 'callback', 'preStringTyped', 'onStringTyped', 'resetCallback');
     this.$().typed({
-      strings, stringsElement, typeSpeed, startDelay, backSpeed, backDelay, loop, loopCount, showCursor, cursorChar, attr, contentType, callback, preStringTyped, onStringTyped, resetCallback
+      strings,
+      stringsElement,
+      typeSpeed,
+      startDelay,
+      backSpeed,
+      backDelay,
+      loop,
+      loopCount,
+      showCursor,
+      cursorChar,
+      attr,
+      contentType,
+      callback,
+      preStringTyped,
+      onStringTyped,
+      resetCallback
     });
   }
 });
