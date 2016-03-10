@@ -4,7 +4,7 @@ import layout from '../templates/components/typed-string';
 export default Ember.Component.extend({
   layout,
   tagName: 'span',
-  strings: null,
+  strings: ['first sentence', 'last sentence'],
   stringsElement: null,
   typeSpeed: 0,
   startDelay: 0,
