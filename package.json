@@ -16,7 +16,7 @@
     "url": "https://github.com/igorpreston/ember-typed"
   },
   "engines": {
-    "node": ">= 0.10.0"
+    "node": ">= 4.8.2"
   },
   "author": "Igor Preston igorpreston@gmail.com",
   "license": "MIT",
