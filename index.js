@@ -1,13 +1,24 @@
 /* jshint node: true */
 'use strict';
 
+var MergeTrees = require('broccoli-merge-trees');
+var Funnel     = require('broccoli-funnel');
+var map        = require('broccoli-stew').map;
+
 module.exports = {
   name: 'ember-typed',
 
   included: (app) => {
-    app.import({
-      development: app.bowerDirectory + '/typed.js/js/typed.js',
-      production: app.bowerDirectory + '/typed.js/dist/typed.min.js'
+      app.import('vendor/typed.js');
+  },
+
+  treeForVendor(vendorTree) {
+    let typedTree = new Funnel('bower_components/typed.js/js', {
+      files: ['typed.js']
     });
-  }
+
+    typedTree = map(typedTree, (content) => `if (typeof FastBoot === 'undefined') { ${content} }`);
+
+    return new MergeTrees([vendorTree, typedTree]);
+  },
 };
