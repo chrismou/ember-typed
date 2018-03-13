@@ -13,7 +13,7 @@ module.exports = {
   },
 
   treeForVendor(vendorTree) {
-    let typedTree = new Funnel('bower_components/typed.js/js', {
+    let typedTree = new Funnel('bower_components/typed.js/lib', {
       files: ['typed.js']
     });
 
