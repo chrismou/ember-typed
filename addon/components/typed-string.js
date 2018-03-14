@@ -23,7 +23,7 @@ export default Ember.Component.extend({
 
   didInsertElement() {
     const { strings, stringsElement, typeSpeed, startDelay, backSpeed, backDelay, loop, loopCount, showCursor, cursorChar, attr, contentType, callback, preStringTyped, onStringTyped, resetCallback } = this.getProperties('strings', 'stringsElement', 'typeSpeed', 'startDelay', 'backSpeed', 'backDelay', 'loop', 'loopCount', 'showCursor', 'cursorChar', 'attr', 'contentType', 'callback', 'preStringTyped', 'onStringTyped', 'resetCallback');
-    this.$().typed({
+    let typed = new Typed('#' + this.elementId, {
       strings,
       stringsElement,
       typeSpeed,
